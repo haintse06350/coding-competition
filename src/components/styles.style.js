@@ -1,0 +1,98 @@
+import { makeStyles } from "@material-ui/core/styles";
+import Bg from "../assets/bg.jpg";
+
+export const useStyles = makeStyles(() => ({
+  root: {
+    width: "100vw",
+    height: "100vh",
+    margin: "auto",
+    backgroundImage: `url(${Bg})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  },
+  logo: {
+    position: "absolute",
+    right: "0",
+    padding: "20px",
+    "& > img": {
+      width: 40,
+      height: 40,
+    },
+  },
+  title: {
+    fontSize: "2rem",
+    fontFamily: "break",
+    position: "absolute",
+    top: "35%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+  },
+  formLogin: {
+    width: 320,
+    height: 140,
+    margin: "auto",
+    padding: 16,
+    backgroundColor: "rgba(255, 255, 255)",
+    boxShadow: "rgba(0 0 0 / 15%) 0px 2px 4px",
+    borderRadius: 4,
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+  },
+  enterName: {
+    width: 288,
+    minHeight: "2.375rem",
+    maxHeight: 48,
+    marginBottom: 16,
+  },
+  button: {
+    width: 288,
+    minHeight: "2.375rem",
+    maxHeight: 48,
+    "& > button": {
+      width: "100%",
+      height: "100%",
+      background: "rgb(51, 51, 51)",
+      color: "rgb(255, 255, 255)",
+      textTransform: "none",
+      fontSize: "1.5rem",
+      fontFamily: "Pixeltype",
+      borderRadius: 4,
+      fontWeight: "bold",
+      padding: "16px 4px",
+      lineHeight: "0.875rem",
+      "&:hover": {
+        background: "rgb(51, 51, 51)",
+        color: "rgb(255, 255, 255)",
+      },
+    },
+  },
+  userName: {
+    width: "100%",
+    height: "100%",
+    "& > div > input": {
+      textAlign: "center",
+      height: "100%",
+      color: "rgb(51, 51, 51)",
+      fontFamily: "Pixeltype",
+      fontSize: "1.25rem",
+      outline: "none",
+      border: "0.125rem solid rgb(204, 204, 204)",
+      borderRadius: 4,
+      backgroundColor: "rgb(255, 255, 255)",
+      padding: "0.25rem 0.375rem",
+      "&:active": {
+        border: "0.125rem solid rgb(51, 51, 51)",
+      },
+      "&:focus": {
+        border: "0.125rem solid rgb(51, 51, 51)",
+      },
+    },
+  },
+}));

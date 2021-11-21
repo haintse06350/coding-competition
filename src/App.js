@@ -1,10 +1,10 @@
 import "./App.css";
-import LoginScreen from "./components/LoginScreen";
+import AppRoutes from "./AppRoutes";
 
 function App() {
   return (
     <div className="App">
-      <LoginScreen />
+      <AppRoutes />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 import Bg from "../assets/bg.jpg";
+import OfficeBg from "../assets/office-bg.jpg";
 
 export const useStyles = makeStyles(() => ({
   root: {
@@ -93,6 +94,93 @@ export const useStyles = makeStyles(() => ({
       "&:focus": {
         border: "0.125rem solid rgb(51, 51, 51)",
       },
+    },
+  },
+
+  //room styles
+  container: {
+    width: "100vw",
+    height: "100vh",
+    background: `url(${OfficeBg})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  form: {
+    width: 420,
+    height: 140,
+    margin: "auto",
+    padding: 20,
+    backgroundColor: "rgba(255, 255, 255)",
+    boxShadow: "rgba(0 0 0 / 15%) 0px 2px 4px",
+    borderRadius: 4,
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    position: "relative",
+  },
+  mettingLogo: {
+    width: 60,
+    height: 60,
+    position: "absolute",
+    top: "0%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+  },
+  joinARoom: {
+    width: "100%",
+    minHeight: "2.375rem",
+    maxHeight: 48,
+    marginBottom: 10,
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  roomIdInput: {
+    width: "70%",
+    color: "rgb(51, 51, 51)",
+    fontSize: "1rem",
+    outline: "none",
+    border: "0.125rem solid rgb(204, 204, 204)",
+    borderRadius: 4,
+    backgroundColor: "rgb(255, 255, 255)",
+    padding: "0.5rem 0.375rem",
+  },
+  joinRoomButton: {
+    width: "25%",
+    height: 38,
+    background: "#4E9F3D",
+    color: "rgb(255, 255, 255)",
+    textTransform: "none",
+    fontSize: "0.75rem",
+    borderRadius: 8,
+    border: "1px solid #4E9F3D",
+    fontWeight: "bold",
+    lineHeight: "0.875rem",
+    "&:hover": {
+      background: "#428335",
+      color: "rgb(255, 255, 255)",
+      border: "1px solid #428335",
+    },
+  },
+  createRoomButton: {
+    width: "100%",
+    height: 44,
+    background: "#368B85",
+    color: "rgb(255, 255, 255)",
+    textTransform: "none",
+    fontSize: "0.75rem",
+    borderRadius: 8,
+    border: "1px solid #368B85",
+    fontWeight: "bold",
+    lineHeight: "0.875rem",
+    "&:hover": {
+      background: "#235855",
+      color: "rgb(255, 255, 255)",
+      border: "1px solid #235855",
     },
   },
 }));

@@ -1,10 +1,5 @@
 import React, { Fragment } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Navigate,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Room from "./components/Room";
 import LoginScreen from "./components/LoginScreen";
 
